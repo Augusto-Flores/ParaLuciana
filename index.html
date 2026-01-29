@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi princesa Luciana ☁️❤️</title>
+    <style>
+        :root {
+            --cinna-blue: #0099ff; /* Tu azul */
+            --love-red: #e63946;   /* Su rojo favorito */
+            --soft-pink: #ffe5ec;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fce7f3 0%, #e0f2fe 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+            color: #444;
+        }
+
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 30px;
+            border: 2px solid var(--love-red);
+            box-shadow: 0 10px 30px rgba(230, 57, 70, 0.15);
+            margin-bottom: 30px;
+            backdrop-filter: blur(5px);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: var(--love-red);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* Fotos */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .photo-frame {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 5px solid white;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .photo-frame:hover {
+            transform: scale(1.02) rotate(1deg);
+        }
+
+        /* Tarjetas de Contenido */
+        .love-card {
+            background: white;
+            border-radius: 25px;
+            padding: 35px;
+            margin: 25px 0;
+            border-left: 10px solid var(--love-red);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .timeline-box {
+            background: var(--soft-pink);
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 15px;
+        }
+
+        .timeline-event {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid var(--love-red);
+        }
+
+        /* Detalles Especiales */
+        .treasures {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: rgba(0, 153, 255, 0.1);
+            border-radius: 20px;
+            margin: 20px 0;
+            border: 1px dashed var(--cinna-blue);
+        }
+
+        .treasure-item {
+            text-align: center;
+            font-size: 0.9em;
+            color: var(--cinna-blue);
+        }
+
+        /* El Mensaje Final */
+        .valentine-box {
+            background: var(--love-red);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 40px;
+            margin: 40px 0;
+            cursor: pointer;
+            transition: 0.4s;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        .cinna-ref {
+            font-size: 1.2em;
+            color: #5ba4cf;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .photo-grid { grid-template-columns: 1fr; }
+            .header h1 { font-size: 1.8em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-elements" id="floating-elements"></div>
+
+    <div class="container">
+        <header class="header">
+            <p class="cinna-ref">Como una nubecita en el cielo... ☁️</p>
+            <h1>Para mi hermosa Luciana</h1>
+            <p style="margin-top:10px;">La dueña de mi corazón y mis sonrisas.</p>
+        </header>
+
+        <section class="photo-grid">
+            <img src="selfie-entera.png" alt="Luciana" class="photo-frame">
+            <img src="cara-besito.jpeg" alt="Nosotros" class="photo-frame">
+        </section>
+
+        <div class="love-card">
+            <h2 style="color: var(--love-red);">Nuestra Historia 💌</h2>
+            <div class="timeline-box">
+                <div class="timeline-event">
+                    <strong>Enero 2023:</strong> Nos conocimos en Luz del Sur. Fuiste mi "hija favorita", la chica que mejor me caía por su energía increíble. Un cariño de líderes y amigos.
+                </div>
+                <div class="timeline-event">
+                    <strong>Enero 2025:</strong> El destino nos volvió a juntar. Seguíamos siendo ese gran equipo, llevándonos genial como siempre.
+                </div>
+                <div class="timeline-event" style="border-left-color: var(--cinna-blue);">
+                    <strong>20 de Enero, 2026 ✨:</strong> Aquí ocurrió la magia. Todo cambió, nos acercamos de una forma nueva y ese regreso a la base con nuestro primer beso fue el inicio de este amor que siento hoy.
+                </div>
+            </div>
+        </div>
+
+        <div class="treasures">
+            <div class="treasure-item">
+                <span style="font-size: 30px;">🏐</span><br>
+                Tu pulsera de Haikyu
+            </div>
+            <div class="treasure-item">
+                <span style="font-size: 30px;">🎀</span><br>
+                Tu liga rosa
+            </div>
+            <p style="align-self: center; font-style: italic;">"Siempre las llevo conmigo, son mi amuleto de ti."</p>
+        </div>
+
+        <div class="love-card" style="border-left-color: var(--cinna-blue);">
+            <h2 style="color: var(--cinna-blue);">Juntos contra todo ☁️💙</h2>
+            <p>Sé que a veces no podremos vernos tan seguido, pero eso no es un impedimento para nosotros. Cada vez que te extraño, recuerdo que vales cada segundo de espera.</p>
+            <br>
+            <p>No importa que nos lleven 7 años; nuestra conexión es única. Te apoyaré en <strong>Medicina</strong>, ya sea aquí o si el sueño te lleva a <strong>Italia</strong> 🇮🇹. Estudiaré inglés contigo, viajaré contigo y estaré en cada una de tus metas. Eres mi prioridad.</p>
+        </div>
+
+        <section class="photo-grid">
+            <img src="cara-noche.jpeg" alt="Noche" class="photo-frame">
+            <img src="cara-besito-2.jpeg" alt="Besitos" class="photo-frame">
+        </section>
+
+        <div class="valentine-box" id="askCard">
+            <h2>Luciana, mi princesa... 🌹</h2>
+            <p style="font-size: 1.4em; margin-top: 15px;">¿Quieres ser mi San Valentín este 14 de febrero?</p>
+            <p style="font-size: 0.8em; margin-top: 20px; opacity: 0.8;">(Toca aquí para responder)</p>
+        </div>
+
+        <footer style="text-align: center; padding: 40px; color: #888;">
+            <p>Te amo más de lo que las palabras pueden decir.</p>
+            <p>☁️❤️💙✨</p>
+        </footer>
+    </div>
+
+    <script>
+        function createFloatingElement() {
+            const elements = ['❤️', '💙', '☁️', '✨', '🌸', '🩹'];
+            const el = document.createElement('div');
+            el.innerHTML = elements[Math.floor(Math.random() * elements.length)];
+            el.style.position = 'fixed';
+            el.style.left = Math.random() * 100 + 'vw';
+            el.style.top = '100vh';
+            el.style.fontSize = (Math.random() * 20 + 20) + 'px';
+            el.style.zIndex = '1000';
+            el.style.pointerEvents = 'none';
+            el.style.opacity = '0.8';
+            el.style.transition = 'transform 6s linear, opacity 6s';
+            
+            document.getElementById('floating-elements').appendChild(el);
+
+            setTimeout(() => {
+                el.style.transform = `translateY(-110vh) rotate(${Math.random() * 360}deg)`;
+                el.style.opacity = '0';
+            }, 100);
+
+            setTimeout(() => el.remove(), 7000);
+        }
+
+        setInterval(createFloatingElement, 400);
+
+        document.getElementById('askCard').addEventListener('click', function() {
+            this.style.background = '#ff8fa3';
+            this.innerHTML = `
+                <h2>¡SÍ! ❤️</h2>
+                <p style="font-size: 1.2em; margin-top:10px;">Prometo hacer de este y todos los días algo especial para ti. Te amo demasiado.</p>
+                <div style="font-size: 30px; margin-top:15px;">☁️🩺🇮🇹✨</div>
+            `;
+            for(let i=0; i<40; i++) {
+                setTimeout(createFloatingElement, i * 50);
+            }
+        });
+    </script>
+</body>
+</html>
